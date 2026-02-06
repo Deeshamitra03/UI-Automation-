@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.12 on darwin)" generated="2026-02-06T18:49:04.497649" rpa="false" schemaversion="5">
+<suite id="s1" name="Booking Flow" source="/Users/user/IdeaProjects/ui-automation/tests/booking_flow.robot">
+<test id="s1-t1" name="Verify Doctor Appointment Booking Flow" line="5">
+<kw name="Open Doctors Listing Page" owner="booking_keywords">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-02-06T18:49:04.763449" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/user/IdeaProjects/ui-automation/browser/traces/temp/cf7bde79-ac84-46fa-9f38-d7728234dde1"}</msg>
+<msg time="2026-02-06T18:49:04.903196" level="INFO">Starting Browser process /Users/user/IdeaProjects/ui-automation/venv/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49268</msg>
+<msg time="2026-02-06T18:49:07.793586" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/user/IdeaProjects/ui-automation/browser/traces/temp/cf7bde79-ac84-46fa-9f38-d7728234dde1"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-02-06T18:49:04.762678" elapsed="3.031380"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-02-06T18:49:07.797741" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2026-02-06T18:49:07.815738" level="INFO">Successfully created context. </msg>
+<msg time="2026-02-06T18:49:07.815818" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-02-06T18:49:07.794969" elapsed="0.020939"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-02-06T18:49:16.267022" level="INFO">Successfully initialized new page object and opened url: https://www.practo.com/tawang/doctors</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-02-06T18:49:07.816098" elapsed="8.451240"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2026-02-06T18:49:16.268379" level="INFO">Waiting page load to state to receive domcontentloaded in 10000.0</msg>
+<msg time="2026-02-06T18:49:16.272916" level="INFO">Load state domcontentloaded got in 10000</msg>
+<arg>domcontentloaded</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2026-02-06T18:49:16.267635" elapsed="0.005472"/>
+</kw>
+<doc>Launches the browser.</doc>
+<status status="PASS" start="2026-02-06T18:49:04.761901" elapsed="11.511413"/>
+</kw>
+<kw name="Apply Filter &quot;Available Tomorrow&quot;" owner="booking_keywords">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-02-06T18:49:16.312376" level="INFO">Waited for Element with selector xpath=//span[contains(text(),'All Filters')] at state visible</msg>
+<arg>${FILTER_AVAILABILITY}</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-02-06T18:49:16.274349" elapsed="0.038256"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-02-06T18:49:16.313526" level="INFO">Clicks the element 'xpath=//span[contains(text(),'All Filters')]'.</msg>
+<arg>${FILTER_AVAILABILITY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-02-06T18:49:16.312879" elapsed="0.523455"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-02-06T18:49:16.843338" level="INFO">Waited for Element with selector xpath=(//span[@data-qa-id='availability_text' and contains(text(), 'Today')])[1] at state visible</msg>
+<arg>${FILTER_OPTION_TOMORROW}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-02-06T18:49:16.836626" elapsed="0.006862"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-02-06T18:49:16.844199" level="INFO">Clicks the element 'xpath=(//span[@data-qa-id='availability_text' and contains(text(), 'Today')])[1]'.</msg>
+<arg>${FILTER_OPTION_TOMORROW}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-02-06T18:49:16.843668" elapsed="0.718284"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-06T18:49:27.563375" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-06T18:49:17.562246" elapsed="10.001251"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-02-06T18:49:38.119730" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-06T18:49:38.119898" level="INFO">See also file:///Users/user/IdeaProjects/ui-automation/playwright-log.txt for additional details.</msg>
+<msg time="2026-02-06T18:49:38.120496" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[@data-qa-id=\'Reset_Filters\'])') to be visible
+</msg>
+<arg>${RESET_FILTERS}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-02-06T18:49:27.563702" elapsed="10.571246">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[@data-qa-id=\'Reset_Filters\'])') to be visible
+</status>
+</kw>
+<doc>Selects the filter</doc>
+<status status="FAIL" start="2026-02-06T18:49:16.273829" elapsed="21.861421">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[@data-qa-id=\'Reset_Filters\'])') to be visible
+</status>
+</kw>
+<kw name="Select First Doctor" owner="booking_keywords">
+<doc>Clicks doctor profile and handles the new tab safely.</doc>
+<status status="NOT RUN" start="2026-02-06T18:49:38.135638" elapsed="0.000129"/>
+</kw>
+<kw name="Select Next Available Slot" owner="booking_keywords">
+<doc>Uses JavaScript to FORCE the click on the slot.</doc>
+<status status="NOT RUN" start="2026-02-06T18:49:38.136092" elapsed="0.000114"/>
+</kw>
+<kw name="Fill Booking Details" owner="booking_keywords">
+<arg>name=TestUser</arg>
+<arg>phone=9999999999</arg>
+<doc>Verifies we reached the Login Gate.</doc>
+<status status="NOT RUN" start="2026-02-06T18:49:38.136513" elapsed="0.000109"/>
+</kw>
+<msg time="2026-02-06T18:49:38.158522" level="INFO">Switching context to context=69c0f929-daa3-46b0-8c71-c53e4cd9201c in CURRENT</msg>
+<msg time="2026-02-06T18:49:38.173147" level="INFO">Successfully changed active context: context=69c0f929-daa3-46b0-8c71-c53e4cd9201c</msg>
+<msg time="2026-02-06T18:49:38.602244" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-02-06T18:49:04.761084" elapsed="33.375863">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[@data-qa-id=\'Reset_Filters\'])') to be visible
+</status>
+</test>
+<status status="FAIL" start="2026-02-06T18:49:04.499200" elapsed="34.104261"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Booking Flow" id="s1" pass="0" fail="1" skip="0">Booking Flow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

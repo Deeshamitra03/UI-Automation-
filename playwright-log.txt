@@ -1,0 +1,66 @@
+{"level":30,"time":"2026-02-06T13:19:05.763Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Listening on 127.0.0.1:49268"}
+{"level":30,"time":"2026-02-06T13:19:06.875Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-02-06T13:19:07.791Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-02-06T13:19:07.791Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-02-06T13:19:07.792Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-02-06T13:19:07.799Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-02-06T13:19:07.799Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}}"}
+{"level":30,"time":"2026-02-06T13:19:07.800Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@8e31e8e90d56185ca21d6da87551c957\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=29c0939d-cd4e-40ee-9335-0441440348a8\"}"}
+{"level":30,"time":"2026-02-06T13:19:07.800Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Trace file: "}
+{"level":30,"time":"2026-02-06T13:19:07.814Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Setting default timeout for context context=69c0f929-daa3-46b0-8c71-c53e4cd9201c to 10000"}
+{"level":30,"time":"2026-02-06T13:19:07.814Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Changed active context: context=69c0f929-daa3-46b0-8c71-c53e4cd9201c"}
+{"level":30,"time":"2026-02-06T13:19:07.814Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method newContext"}
+{"level":30,"time":"2026-02-06T13:19:07.818Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-02-06T13:19:07.819Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@8e31e8e90d56185ca21d6da87551c957\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=69c0f929-daa3-46b0-8c71-c53e4cd9201c\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@98b5c4a1110d8ac31899a1a5845acde6\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}},\"traceFile\":\"\"}],\"id\":\"browser=29c0939d-cd4e-40ee-9335-0441440348a8\"}"}
+{"level":30,"time":"2026-02-06T13:19:09.242Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-02-06T13:19:09.243Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2026-02-06T13:19:16.265Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method newPage"}
+{"level":30,"time":"2026-02-06T13:19:16.270Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-02-06T13:19:16.270Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"timeout: 10000 state: domcontentloaded"}
+{"level":30,"time":"2026-02-06T13:19:16.272Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-02-06T13:19:16.278Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-02-06T13:19:16.278Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with xpath=//span[contains(text(),'All Filters')] in page."}
+{"level":30,"time":"2026-02-06T13:19:16.311Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-02-06T13:19:16.314Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-02-06T13:19:16.315Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with xpath=//span[contains(text(),'All Filters')] in page."}
+{"level":30,"time":"2026-02-06T13:19:16.835Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method click"}
+{"level":30,"time":"2026-02-06T13:19:16.839Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-02-06T13:19:16.839Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with xpath=(//span[@data-qa-id='availability_text' and contains(text(), 'Today')])[1] in page."}
+{"level":30,"time":"2026-02-06T13:19:16.842Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-02-06T13:19:16.845Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-02-06T13:19:16.845Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with xpath=(//span[@data-qa-id='availability_text' and contains(text(), 'Today')])[1] in page."}
+{"level":30,"time":"2026-02-06T13:19:17.559Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method click"}
+{"level":30,"time":"2026-02-06T13:19:27.582Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-02-06T13:19:27.582Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with xpath=(//button[@data-qa-id='Reset_Filters']) in page."}
+{"level":30,"time":"2026-02-06T13:19:37.585Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('xpath=(//button[@data-qa-id=\'Reset_Filters\'])') to be visible[22m
+
+    at waitForElementState (/Users/user/IdeaProjects/ui-automation/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:11721:19)
+    at async PlaywrightServer.waitForElementsState (/Users/user/IdeaProjects/ui-automation/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-02-06T13:19:37.591Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-02-06T13:19:37.592Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","Take screenshot with options: ":{"path":"/Users/user/IdeaProjects/ui-automation/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-02-06T13:19:38.118Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-02-06T13:19:38.148Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.150Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.152Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.153Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.156Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.157Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.159Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.160Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.163Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Changed active context: context=69c0f929-daa3-46b0-8c71-c53e4cd9201c"}
+{"level":30,"time":"2026-02-06T13:19:38.163Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Changing current active page: page=24b2d1f2-5a39-4a91-a00a-4f7885c3de72"}
+{"level":30,"time":"2026-02-06T13:19:38.163Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2026-02-06T13:19:38.173Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-02-06T13:19:38.560Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Removed page=04d18f29-63fc-4b24-9955-56a06be5171e from context=69c0f929-daa3-46b0-8c71-c53e4cd9201c page stack"}
+{"level":30,"time":"2026-02-06T13:19:38.598Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-02-06T13:19:38.610Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.610Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-02-06T13:19:38.662Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-02-06T13:19:38.909Z","pid":21969,"hostname":"Practo-ka-MacBook-Pro.local","msg":"End of node method closeAllBrowsers"}
