@@ -20,7 +20,7 @@ Apply Filter "Available Tomorrow"
     Wait For Elements State    ${FILTER_OPTION_TOMORROW}    visible    timeout=30s
     Click    ${FILTER_OPTION_TOMORROW}
     #Sleep   10s
-    #Wait For Elements State    ${RESET_FILTERS}    visible    timeout=10s
+    Wait For Elements State    ${RESET_FILTERS}    visible    timeout=10s
 
 Select First Doctor
     [Documentation]    Clicks doctor profile and handles the new tab safely.
